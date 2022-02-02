@@ -43,6 +43,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - jburel
     - conda-forge/napari
     - joshmoore
     - sbesson
