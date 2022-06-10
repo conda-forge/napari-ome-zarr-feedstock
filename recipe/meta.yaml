@@ -44,7 +44,8 @@ about:
 extra:
   recipe-maintainers:
     - jburel
-    - conda-forge/napari
+    - goanpeca
+    - jaimergp
     - joshmoore
     - sbesson
     - will-moore
