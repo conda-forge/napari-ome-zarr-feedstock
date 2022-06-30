@@ -1,5 +1,5 @@
 {% set name = "napari-ome-zarr" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/napari-ome-zarr-{{ version }}.tar.gz
-  sha256: b889a8901efeafe728cb7aea5231fd14017746d8633add3032a6f5e30289287e
+  sha256: 82bb108cb32276b66635c4ca6bd413bce0c8a06f80e69ecd45182d0c90a5f369
 
 build:
   noarch: python
@@ -20,6 +20,7 @@ requirements:
     - python >=3.7
     - setuptools-scm
   run:
+    - napari
     - napari-plugin-engine >=0.1.4
     - numpy
     - ome-zarr >=0.2.0
