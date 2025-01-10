@@ -147,6 +147,5 @@ Feedstock Maintainers
 * [@jaimergp](https://github.com/jaimergp/)
 * [@jburel](https://github.com/jburel/)
 * [@joshmoore](https://github.com/joshmoore/)
-* [@sbesson](https://github.com/sbesson/)
 * [@will-moore](https://github.com/will-moore/)
 
