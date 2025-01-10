@@ -17,14 +17,14 @@ build:
 requirements:
   host:
     - pip
-    - python {{ python_min }}
+    - python >3.10
     - setuptools-scm
   run:
     - napari
     - napari-plugin-engine >=0.1.4
     - numpy
     - ome-zarr >=0.2.0
-    - python >={{ python_min }}
+    - python >3.10
     - vispy
 
 test:
@@ -35,7 +35,7 @@ test:
     - pip check
   requires:
     - pip
-    - python {{ python_min }}
+    - python >3.10
 
 about:
   home: https://github.com/ome/napari-ome-zarr
