@@ -1,5 +1,5 @@
 {% set name = "napari-ome-zarr" %}
-{% set version = "0.7.3" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 18713d02c71e80629dd4a6d278d6621e80e966a97915c078210bb66267b564cd
+  sha256: 48db0f0454f6ea4c5d63a78f3c02bbd3f1854e9d09e756868a8ba4fa65991d92
 
 build:
   noarch: python
