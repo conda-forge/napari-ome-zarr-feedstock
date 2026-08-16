@@ -1,13 +1,13 @@
 {% set name = "napari-ome-zarr" %}
-{% set version = "0.9.0" %}
+{% set version = "0.10.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 80df94d8c06d30d2708b37809d1ed0dfda56afee45595818ba6c32a52ee5a3cc
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 5fbfcbea0d1c603977550dbdf86a803c8684e0e68c90344bc39c6114f45abe95
 
 build:
   noarch: python
@@ -20,8 +20,10 @@ requirements:
     - python >3.10
     - setuptools-scm
   run:
+    - aiohttp
+    - requests
     - zarr >=3.1.5
-    - napari >=0.4.0
+    - napari >=0.6.0
     - napari-plugin-engine >=0.1.4
     - numpy
     - ome-zarr >=0.13.0
